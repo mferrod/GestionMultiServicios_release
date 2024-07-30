@@ -5,5 +5,5 @@
     <string name="contrase_a">Contraseña</string>
     <string name="iniciar_sesi_n">Iniciar Sesión</string>
     <string name="bienvenida_login">BIENVENIDO A GESTIÓN MULTISERVICIO</string>
-    <string name="api_key" templateMergeStrategy="preserve" translatable="false">AIzaSyA46tVyJt-4sCBs5HCH6OkqAzn_pocoGc4</string>
+    <string name="api_key" templateMergeStrategy="preserve" translatable="false">YOUR_GOOGLE_API_KEY</string>
 </resources>
