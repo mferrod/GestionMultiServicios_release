@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="clienteCombo" type="id" />
+    <item name="usuarioCombo" type="id" />
+    <item name="tipoFactuCombo" type="id" />
+    <item name="labelCliente" type="id" />
+    <item name="labelUsuario" type="id" />
+    <item name="labelTipoFactura" type="id" />
+    <item name="searchTField" type="id" />
+    <item name="searchBtn" type="id" />
+    <item name="addBtn" type="id" />
+    <item name="productosRecyclerView" type="id" />
+    <item name="productosFacturadosRecyclerView" type="id" />
+    <item name="montoSinIVALabel" type="id" />
+    <item name="montoConIVALabel" type="id" />
+    <item name="removeBtn" type="id" />
+    <item name="crearFacturaBtn" type="id" />
+    <item name="salirBtn" type="id" />
+    <item name="recyclerView1" type="id" />
+    <item name="button1" type="id" />
+    <item name="button2" type="id" />
+    <item name="recyclerView2" type="id" />
+    <item name="headerText" type="id" />
+</resources>

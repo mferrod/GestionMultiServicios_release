@@ -1,0 +1,21 @@
+version: '3.1'
+services:
+ tomcat:
+  build:
+    context: ./
+    dockerfile: Dockerfile
+  ports:
+   - 8888:8080
+   - 9443:8443
+  volumes:
+   - ./.javaWebApps/java:/usr/local/tomcat/webapps
+   - ./.javaWebApps/temp:/usr/local/tomcat/temp
+   - ./.javaWebApps/logs:/usr/local/tomcat/logs
+ mysql:
+   image: mariadb:10
+   ports:
+     - 27892:3306
+   volumes:
+     - ./.mysql/db:/var/lib/mysql
+   environment:
+     - MYSQL_ROOT_PASSWORD=YOUR_OWN_MYSQL_PASSWD

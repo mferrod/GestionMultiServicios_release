@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainClientesActivity"
+    android:background="#FFB347"
+    tools:context=".View.CrearClienteActivity">
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Crear Cliente"
+        android:textSize="24sp"
+        android:textColor="#333333"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_min="0dp" />
+
+    <!-- EditText 1 -->
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:layout_margin="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_min="0dp" />
+
+    <!-- EditText 2 -->
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Apellidos"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:layout_margin="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/editText1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_min="0dp" />
+
+    <!-- EditText 3 -->
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:layout_margin="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_min="0dp" />
+
+    <!-- EditText 4 -->
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="DNI"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:layout_margin="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/editText3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_min="0dp" />
+
+    <!-- EditText 5 -->
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Dirección"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:layout_margin="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/editText4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_min="0dp" />
+
+    <!-- EditText 6 -->
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Teléfono"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:layout_margin="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/editText5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_min="0dp" />
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/crearClientesBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Crear Cliente"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_background"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/editText6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/salirBtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_min="0dp" />
+
+    <!-- Cancel Button -->
+    <Button
+        android:id="@+id/salirBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Salir"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_background"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/editText6"
+        app:layout_constraintStart_toEndOf="@+id/crearClientesBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_min="0dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1024.0" style="-fx-background-color: #FFB347;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.marianof.gms2_app.GmsClientesModiadd">
+    <children>
+        <Button fx:id="guardarBtn" layoutX="421.0" layoutY="698.0" mnemonicParsing="false" onAction="#guardar" prefHeight="44.0" prefWidth="184.0" style="-fx-background-color: #FF8300; -fx-text-fill: white;" text="Guardar">
+            <font>
+                <Font size="20.0" />
+            </font>
+            <effect>
+                <DropShadow color="#00000055" radius="10" />
+            </effect>
+        </Button>
+        <TextField fx:id="editTextTelefono" alignment="CENTER" layoutX="387.0" layoutY="559.0" promptText="Teléfono" style="-fx-background-color: #ffffff; -fx-border-color: #FF8300; -fx-border-radius: 5; -fx-background-radius: 5;">
+            <font>
+                <Font size="20.0" />
+            </font>
+            <effect>
+                <DropShadow color="#00000055" radius="5" />
+            </effect>
+        </TextField>
+        <TextField fx:id="editTextDireccion" alignment="CENTER" layoutX="387.0" layoutY="491.0" promptText="Dirección" style="-fx-background-color: #ffffff; -fx-border-color: #FF8300; -fx-border-radius: 5; -fx-background-radius: 5;">
+            <font>
+                <Font size="20.0" />
+            </font>
+            <effect>
+                <DropShadow color="#00000055" radius="5" />
+            </effect>
+        </TextField>
+        <TextField fx:id="editTextDNI" alignment="CENTER" layoutX="388.0" layoutY="427.0" promptText="DNI" style="-fx-background-color: #ffffff; -fx-border-color: #FF8300; -fx-border-radius: 5; -fx-background-radius: 5;">
+            <font>
+                <Font size="20.0" />
+            </font>
+            <effect>
+                <DropShadow color="#00000055" radius="5" />
+            </effect>
+        </TextField>
+        <TextField fx:id="editTextEmail" alignment="CENTER" layoutX="388.0" layoutY="360.0" promptText="Email" style="-fx-background-color: #ffffff; -fx-border-color: #FF8300; -fx-border-radius: 5; -fx-background-radius: 5;">
+            <font>
+                <Font size="20.0" />
+            </font>
+            <effect>
+                <DropShadow color="#00000055" radius="5" />
+            </effect>
+        </TextField>
+        <TextField fx:id="editTextApellidos" alignment="CENTER" layoutX="388.0" layoutY="294.0" promptText="Apellidos" style="-fx-background-color: #ffffff; -fx-border-color: #FF8300; -fx-border-radius: 5; -fx-background-radius: 5;">
+            <font>
+                <Font size="20.0" />
+            </font>
+            <effect>
+                <DropShadow color="#00000055" radius="5" />
+            </effect>
+        </TextField>
+        <TextField fx:id="editTextNombre" alignment="CENTER" layoutX="387.0" layoutY="226.0" promptText="Nombre" style="-fx-background-color: #ffffff; -fx-border-color: #FF8300; -fx-border-radius: 5; -fx-background-radius: 5;">
+            <font>
+                <Font size="20.0" />
+            </font>
+            <effect>
+                <DropShadow color="#00000055" radius="5" />
+            </effect>
+        </TextField>
+      <Label fx:id="txtLabel" layoutX="396.0" layoutY="89.0">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="salirBtn" layoutX="94.0" layoutY="698.0" mnemonicParsing="false" onAction="#salir" prefHeight="44.0" prefWidth="184.0" style="-fx-background-color: #FF8300; -fx-text-fill: white;" text="Salir">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <DropShadow color="#00000055" radius="10" />
+         </effect>
+      </Button>
+      <Button fx:id="deleteBtn" layoutX="755.0" layoutY="698.0" mnemonicParsing="false" onAction="#delete" prefHeight="44.0" prefWidth="184.0" style="-fx-background-color: #FF8300; -fx-text-fill: white;" text="Borrar">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <DropShadow color="#00000055" radius="10" />
+         </effect>
+      </Button>
+    </children>
+</AnchorPane>

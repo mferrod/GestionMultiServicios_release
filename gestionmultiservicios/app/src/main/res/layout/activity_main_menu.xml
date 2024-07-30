@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainmenu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFB347"
+    tools:context=".View.MainMenu_Activity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¡BIENVENIDO!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"
+        android:textColor="#333333"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/buttonF"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Facturación"
+            android:background="@drawable/button_background"
+            android:layout_marginEnd="8dp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF6200EE"
+            android:padding="16dp"/>
+
+        <Button
+            android:id="@+id/buttonGPS"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="GPS"
+            android:background="@drawable/button_background"
+            android:layout_marginStart="8dp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF6200EE"
+            android:padding="16dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/buttonFA"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Funciones Admin"
+            android:background="@drawable/button_background"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF6200EE"
+            android:padding="16dp"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/buttonCli"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Clientes"
+            android:background="@drawable/button_background"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF6200EE"
+            android:padding="16dp"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/buttomExit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cerrar sesión"
+        android:background="@drawable/button_background"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FF6200EE"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

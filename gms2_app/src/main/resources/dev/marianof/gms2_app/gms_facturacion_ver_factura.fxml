@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.effect.DropShadow?>
+<AnchorPane prefHeight="800.0" prefWidth="1024.0" style="-fx-background-color: #FFB347;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.marianof.gms2_app.GmsFacturacionVerFactura">
+    <children>
+        <ComboBox fx:id="clienteCombo" disable="true" layoutX="137.0" layoutY="36.0" prefHeight="32.0" prefWidth="176.0" />
+        <ListView fx:id="productosLView" layoutX="45.0" layoutY="207.0" prefHeight="302.0" prefWidth="401.0" />
+        <ListView fx:id="productosFactuLView" disable="true" layoutX="579.0" layoutY="207.0" prefHeight="302.0" prefWidth="401.0" />
+        <Button fx:id="addBtn" layoutX="492.0" layoutY="287.0" mnemonicParsing="false" onAction="#add" prefHeight="42.0" prefWidth="40.0" style="-fx-background-color: #FF8300; -fx-text-fill: white;" text="+">
+            <font>
+                <Font size="20.0" />
+            </font>
+            <effect>
+                <DropShadow color="#00000055" radius="10" />
+            </effect>
+        </Button>
+        <Button fx:id="removeBtn" layoutX="493.0" layoutY="388.0" mnemonicParsing="false" onAction="#remove" prefHeight="42.0" prefWidth="40.0" style="-fx-background-color: #FF8300; -fx-text-fill: white;" text="-">
+            <font>
+                <Font size="20.0" />
+            </font>
+            <effect>
+                <DropShadow color="#00000055" radius="10" />
+            </effect>
+        </Button>
+        <Label fx:id="montoSinIVALabel" layoutX="50.0" layoutY="560.0" text="Monto sin IVA:">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="montoConIVALabel" layoutX="49.0" layoutY="608.0" text="Monto con IVA: ">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="44.0" layoutY="35.0" text="Cliente:">
+            <font>
+                <Font name="System Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="352.0" layoutY="37.0" text="Usuario:">
+            <font>
+                <Font name="System Bold" size="22.0" />
+            </font>
+        </Label>
+        <ComboBox fx:id="usuarioCombo" disable="true" layoutX="453.0" layoutY="36.0" prefHeight="32.0" prefWidth="176.0" />
+        <Label layoutX="653.0" layoutY="35.0" text="Tipo Factura: ">
+            <font>
+                <Font name="System Bold" size="22.0" />
+            </font>
+        </Label>
+        <Button fx:id="modificarFacturaBtn" layoutX="419.0" layoutY="712.0" mnemonicParsing="false" onAction="#modificarFactura" style="-fx-background-color: #FF8300; -fx-text-fill: white;" prefHeight="43.0" prefWidth="158.0" text="Editar Factura">
+            <font>
+                <Font size="20.0" />
+            </font>
+            <effect>
+                <DropShadow color="#00000055" radius="10" />
+            </effect>
+        </Button>
+        <TextField fx:id="searchTField" layoutX="48.0" layoutY="154.0" prefHeight="43.0" prefWidth="301.0" promptText="Buscar" />
+        <Button fx:id="searchBtn" layoutX="369.0" layoutY="153.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="52.0" style="-fx-background-color: #FF8300; -fx-text-fill: white;">
+            <font>
+                <Font size="20.0" />
+            </font>
+            <effect>
+                <DropShadow color="#00000055" radius="10" />
+            </effect>
+        </Button>
+        <ComboBox fx:id="tipoFactuCombo" disable="true" layoutX="794.0" layoutY="37.0" onAction="#changeFactura" prefHeight="32.0" prefWidth="176.0" />
+        <Button fx:id="salirBtn" layoutX="30.0" layoutY="712.0" mnemonicParsing="false" onAction="#salir" prefHeight="43.0" prefWidth="158.0" style="-fx-background-color: #FF8300; -fx-text-fill: white;" text="Salir">
+            <font>
+                <Font size="20.0" />
+            </font>
+            <effect>
+                <DropShadow color="#00000055" radius="10" />
+            </effect>
+        </Button>
+      <Button fx:id="eliminarFacturaBtn" layoutX="216.0" layoutY="712.0" mnemonicParsing="false" onAction="#eliminarFactura" prefHeight="44.0" prefWidth="176.0" style="-fx-background-color: #FF8300; -fx-text-fill: white;" text="Eliminar Factura">
+          <font>
+              <Font size="20.0" />
+          </font>
+          <effect>
+              <DropShadow color="#00000055" radius="10" />
+          </effect>
+      </Button>
+      <Button fx:id="hacerPdfBtn" layoutX="852.0" layoutY="712.0" mnemonicParsing="false" onAction="#hacerPdf" prefHeight="43.0" prefWidth="158.0" style="-fx-background-color: #FF8300; -fx-text-fill: white;" text="Hacer PDF">
+          <font>
+              <Font size="20.0" />
+          </font>
+          <effect>
+              <DropShadow color="#00000055" radius="10" />
+          </effect>
+      </Button>
+    </children>
+</AnchorPane>
